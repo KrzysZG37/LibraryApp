@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card">
+
+
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="#444"
+        android:padding="3dp"
+        android:contentDescription="@string/newsImage" />
+
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_toLeftOf="@+id/newsDate"
+        android:layout_toRightOf="@+id/newsImage"
+        android:maxLines="1"
+        android:text="@string/newsTitle"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/newsDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newsTitle"
+        android:layout_toRightOf="@+id/newsImage"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/newsDescription"
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/newsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dip"
+        android:text="@string/newsDate"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/newsImage"
+        android:layout_marginStart="31dp" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LibraryApp</string>
+    <string name="action_settings">About User</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Full name</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="app_version_1">LibraryApp version 1.0</string>
+    <string name="app_version_2">Application created for subject:</string>
+    <string name="app_version_3">Zaawansowane zagadnienia</string>
+    <string name="app_version_4">programowania w Javie</string>
+    <string name="app_version_5">by</string>
+    <string name="app_version_6">Krzysztof Stępień</string>
+    <string name="app_version_7">181430</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="btn_news_screen">GO TO MAIN PAGE</string>
+
+    <string name="pageNumber">Page number:</string>
+    <string name="availableBooks">Available books</string>
+    <string name="reservedBooks">Reserved books</string>
+    <string name="passPDF">Password protected PDF-File:</string>
+    <string name="enterPassPDF">please enter password for PDF</string>
+    <string name="eBookTitle">title</string>
+    <string name="eBookDescription">description</string>
+    <string name="newsTitle">title</string>
+    <string name="newsDescription">description</string>
+    <string name="exit">Exit</string>
+    <string name="ok">OK</string>
+    <string name="newsDate">date</string>
+    <string name="eBookDate">date</string>
+    <string name="bookDate">date</string>
+    <string name="bookName">name</string>
+    <string name="bookDescription">description</string>
+    <string name="download">Download</string>
+    <string name="reserve">Reserve</string>
+    <string name="show">Show</string>
+    <string name="appLogo">Logo of the app</string>
+    <string name="appLogoImage">Image of the app</string>
+    <string name="eBookImage">Image of the E-Book</string>
+    <string name="newsImage">Image of the News</string>
+    <string name="arrowImage">Image of the arrow</string>
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Dashboard</item>
+        <item>News</item>
+        <item>Books</item>
+        <item>E-Books</item>
+        <item>Map</item>
+        <item>About</item>
+    </string-array>
+
+    <string name="fragment_title_dashboard">Dashboard</string>
+    <string name="fragment_title_news">News</string>
+    <string name="fragment_title_books">Books</string>
+    <string name="fragment_title_e_books">E-Books</string>
+    <string name="fragment_title_about">About</string>
+    <string name="fragment_title_map">Map</string>
+
+
+    <!-- Nav Drawer List Item Icons -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_dashboard</item>
+        <item>@drawable/ic_news</item>
+        <item>@drawable/ic_books</item>
+        <item>@drawable/ic_e_books</item>
+        <item>@drawable/ic_map</item>
+        <item>@drawable/ic_about</item>
+    </array>
+
+    <string name="openDrawer">openDrawer</string>
+    <string name="closeDrawer">closeDrawer</string>
+
+
+</resources>

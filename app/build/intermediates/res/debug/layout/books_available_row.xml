@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/bookImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="#444"
+            android:padding="3dp"
+            android:contentDescription="@string/eBookImage" />
+
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@+id/bookDate"
+            android:layout_toRightOf="@+id/bookImage"
+            android:maxLines="1"
+            android:text="@string/bookName"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bookDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookTitle"
+            android:layout_toRightOf="@+id/bookImage"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/bookDescription"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <ProgressBar
+            android:id="@+id/pBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/bookImage"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp" />
+
+        <TextView
+            android:id="@+id/bookDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dip"
+            android:text="@string/bookDate"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout><!-- From: file:/C:/Users/Krzysiek/Documents/ADVANCED_JAVA/ADVANCED_JAVAwc/branches/SlidingMenu/app/src/main/res/layout/books_available_row.xml -->

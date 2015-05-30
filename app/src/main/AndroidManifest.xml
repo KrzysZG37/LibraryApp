@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="info.androidhive.LibraryApp"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:supportsRtl="true">
+
+    <!-- Permission: Allow Connect to Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Permission: Writing to SDCard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-library android:name="com.google.android.maps" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21"
+        tools:ignore="GradleOverrides" />
+
+    <application
+        android:name="com.stepienk.libraryapp.model.sql_login.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_home"
+        android:label="LibraryApp"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.stepienk.libraryapp.view.main.MainActivity"
+            android:label="LibraryApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB6AIids_I9LvdhSX9tPqlxHoH8tHzIwxM" />
+
+
+       <!-- <activity
+            android:name="com.stepienk.libraryapp.view.main.MainActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />-->
+        <activity
+            android:name="com.stepienk.libraryapp.view.news.NewsDetailActivity"
+            android:label="Details"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.stepienk.libraryapp.view.ebooks.eBookDetailActivity"
+            android:label="Details"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.stepienk.libraryapp.view.books.AvailableBooksDetailsActivity"
+            android:label="Details"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.stepienk.libraryapp.view.ebooks.eBookShowPdfActivity"
+            android:label="E-book details"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.stepienk.libraryapp.view.login.RegisterActivity"
+            android:label="Reserved books"
+            android:launchMode="singleTop"
+            android:theme="@style/NoTitleBar" />
+        <activity
+            android:name="com.stepienk.libraryapp.view.login.WelcomeActivity"
+            android:label="Additional page"
+            android:launchMode="singleTop"
+            android:theme="@style/NoTitleBar" />
+
+
+    </application>
+
+</manifest>

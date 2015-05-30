@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/drawer_toolbar"></include>
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/newdrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="7dp"
+        android:layout_below="@+id/tool_bar">
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fillViewport="true"
+            android:layout_below="@+id/btnDownload"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <LinearLayout
+                android:id="@+id/frame_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#d3d3d3">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card"
+                    android:weightSum="1">
+
+                    <ProgressBar
+                        android:id="@+id/pbardesc"
+                        style="@android:style/Widget.ProgressBar.Small.Inverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="35dp"
+                        android:layout_centerInParent="true" />
+
+
+                    <ImageView
+                        android:id="@+id/eBookPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/no_photo"
+                        android:contentDescription="@string/eBookImage"
+                        android:adjustViewBounds="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/eBookTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eBookTitle"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/btnDownload"
+                        android:layout_alignLeft="@+id/eBookPhoto"
+                        android:layout_alignStart="@+id/eBookPhoto" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/eBookDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eBookDescription"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_card"
+                    android:weightSum="1">
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/download"
+                        android:id="@+id/btnDownload"
+                        android:layout_below="@+id/eBookDescription"
+                        android:layout_alignLeft="@+id/pbardesc"
+                        android:layout_alignStart="@+id/pbardesc"
+                        android:layout_alignParentLeft="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/show"
+                        android:id="@+id/btnShow"
+                        android:layout_above="@+id/eBookTitle"
+                        android:layout_alignRight="@+id/eBookDescription"
+                        android:layout_alignEnd="@+id/eBookDescription"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.DrawerLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/toolbar_shadow" />
+
+</RelativeLayout>
