@@ -86,11 +86,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_0_0.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/universal_image_loader_1_2_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/volley.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/test/java/unit_tests/databaseTest.java" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\.idea\libraries\appcompat_v7_21_0_3.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\.idea\libraries\hamcrest_core_1_3.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\.idea\libraries\junit_4_12.xml" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\.idea\libraries\play_services_4_2_42.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\src\test\java\unit_tests\databaseTest.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
@@ -249,21 +249,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BooksAdapterTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/unit_tests/BooksAdapterTests.java">
+      <file leaf-file-name="IsNetworkAvailableUtilTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/unit_tests/IsNetworkAvailableUtilTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.16687116">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="databaseTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/unit_tests/databaseTest.java">
+      <file leaf-file-name="BooksAdapterTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/unit_tests/BooksAdapterTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14601228">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -3031,18 +3031,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/unit_tests/BooksAdapterTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/unit_tests/EBooksAdapterTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="56" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/unit_tests/BooksAdapterTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3055,9 +3055,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/unit_tests/databaseTest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/unit_tests/IsNetworkAvailableUtilTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14601228">
+        <state vertical-scroll-proportion="0.16687116">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
