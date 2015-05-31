@@ -7,6 +7,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,8 @@ public class EBookNamesParser implements dropBoxNamesParserInterface {
 
     private EBook objEBook;
     private List<EBook> listArray;
+    private int tagForTest = 0;
+    private InputStream inputStream;
 
     /**
      * Retrieve data from url response and put into eBook object
@@ -61,7 +64,13 @@ public class EBookNamesParser implements dropBoxNamesParserInterface {
         try {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();
-            Document doc = db.parse(new URL(url).openStream());
+            Document doc = null;
+            if (tagForTest == 0) {
+                doc = db.parse(new URL(url).openStream());
+            } else if (tagForTest == 1) {
+                doc = db.parse(inputStream);
+            }
+
 
             doc.getDocumentElement().normalize();
 
@@ -101,4 +110,13 @@ public class EBookNamesParser implements dropBoxNamesParserInterface {
         objEBook.setLink(getTagValue("link", eElement));
         objEBook.setPdfLink(getTagValue("pdflink", eElement));
     }
+
+    public void setTagForTest(int tag) {
+        this.tagForTest = tag;
+    }
+
+    public void setInputStream(InputStream inputStream) {
+        this.inputStream = inputStream;
+    }
+
 }
