@@ -2574,7 +2574,8 @@ containing a value of this type.
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0f00f6;
     }
     public static final class xml {
-        public static final int news_content=0x7f060000;
+        public static final int ebooks_content=0x7f060000;
+        public static final int news_content=0x7f060001;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

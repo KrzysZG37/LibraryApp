@@ -36,6 +36,9 @@ android {
             setRoot('src/androidTest')
         }
     }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {

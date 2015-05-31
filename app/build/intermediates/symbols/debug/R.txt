@@ -1442,4 +1442,5 @@ int styleable WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance 5
 int styleable WalletFragmentStyle_maskedWalletDetailsLogoImageType 10
 int styleable WalletFragmentStyle_maskedWalletDetailsLogoTextColor 9
 int styleable WalletFragmentStyle_maskedWalletDetailsTextAppearance 4
-int xml news_content 0x7f060000
+int xml ebooks_content 0x7f060000
+int xml news_content 0x7f060001
