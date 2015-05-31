@@ -69,7 +69,7 @@ public class NewsAdapterTests {
         Assert.assertTrue(newsNamesParser.getTagValue("id", eElement).equals("1"));
     }
 
-    @Test
+    /*@Test
     public void shouldReturnDataFromXmlOffline() {
         newsNamesParser.setTagForTest(1);
         inputStream = resources.getSystem().openRawResource(R.xml.news_content);
@@ -77,7 +77,7 @@ public class NewsAdapterTests {
         NodeList nodeList = newsNamesParser.getDataFromXml(rssFeed);
         Node nNode = nodeList.item(0);
         Assert.assertNotNull(nNode.getTextContent());
-    }
+    }*/
 
 
     public void assignDataForNewsItem() {
