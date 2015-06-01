@@ -2,3 +2,5 @@ native
 wrapper
 build
 app/build/
+.idea/worskspace.xml
+.gitignore
