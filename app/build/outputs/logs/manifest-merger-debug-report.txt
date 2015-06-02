@@ -231,7 +231,7 @@ MERGED from com.android.support:support-v4:22.0.0:22:5
 		ADDED from AndroidManifest.xml:28:9
 	android:name
 		ADDED from AndroidManifest.xml:24:9
-activity#com.stepienk.libraryapp.view.main.MainActivity
+activity#com.stepienk.libraryapp.view.login.LoginActivity
 ADDED from AndroidManifest.xml:29:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:32:13
@@ -289,6 +289,16 @@ ADDED from AndroidManifest.xml:45:9
 		ADDED from AndroidManifest.xml:46:13
 	android:value
 		ADDED from AndroidManifest.xml:47:13
+activity#com.stepienk.libraryapp.view.main.MainActivity
+ADDED from AndroidManifest.xml:50:9
+	android:label
+		ADDED from AndroidManifest.xml:52:13
+	android:theme
+		ADDED from AndroidManifest.xml:54:13
+	android:name
+		ADDED from AndroidManifest.xml:51:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:53:13
 activity#com.stepienk.libraryapp.view.news.NewsDetailActivity
 ADDED from AndroidManifest.xml:55:9
 	android:label

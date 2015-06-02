@@ -26,7 +26,7 @@
         android:label="LibraryApp"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.stepienk.libraryapp.view.main.MainActivity"
+            android:name="com.stepienk.libraryapp.view.login.LoginActivity"
             android:label="LibraryApp"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" >
@@ -44,13 +44,11 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyB6AIids_I9LvdhSX9tPqlxHoH8tHzIwxM" />
 
-        <!--
-            <activity
+        <activity
             android:name="com.stepienk.libraryapp.view.main.MainActivity"
             android:label=""
             android:launchMode="singleTop"
             android:theme="@style/AppTheme" />
-        -->
         <activity
             android:name="com.stepienk.libraryapp.view.news.NewsDetailActivity"
             android:label="Details"

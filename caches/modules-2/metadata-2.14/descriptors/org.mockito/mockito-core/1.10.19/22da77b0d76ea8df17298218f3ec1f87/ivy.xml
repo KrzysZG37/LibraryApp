@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="org.mockito" module="mockito-core" revision="1.10.19" status="release" publication="20150531124559">
+  <info organisation="org.mockito" module="mockito-core" revision="1.10.19" status="release" publication="20150602150933">
     <license name="The MIT License" url="http://github.com/mockito/mockito/blob/master/LICENSE"/>
     <description homepage="http://www.mockito.org">Mock objects library for java</description>
   </info>
