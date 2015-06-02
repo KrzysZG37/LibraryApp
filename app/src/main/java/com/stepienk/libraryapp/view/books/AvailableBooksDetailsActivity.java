@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.stepienk.libraryapp.utils.imagesUtil;
+import com.stepienk.libraryapp.utils.LoadImages;
 
 import info.androidhive.LibraryApp.R;
 
@@ -66,7 +66,7 @@ public class AvailableBooksDetailsActivity extends ActionBarActivity {
         bookDate.setText(date);
 
         String url = b.getString("image");
-        imagesUtil.loadImageFromURL(url, options, imageLoader, pBar, this, bookPhoto);
+        LoadImages.loadImageFromURL(url, options, imageLoader, pBar, this, bookPhoto);
 
         btnReserve.setOnClickListener(new View.OnClickListener() {
 

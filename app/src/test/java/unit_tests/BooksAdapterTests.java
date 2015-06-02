@@ -29,6 +29,7 @@ public class BooksAdapterTests {
     @Test
     public void shouldReturnJsonWithBookContent() throws JSONException {
         setUpJson();
+        booksNamesParser.setTagForTest(1);
         booksNamesParser.setJsonObject(jsonResponse);
         booksNamesParser.getAllBooks();
         jsonArray = booksNamesParser.getAllBooks();

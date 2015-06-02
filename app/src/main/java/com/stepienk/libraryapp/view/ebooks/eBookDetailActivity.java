@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.stepienk.libraryapp.utils.imagesUtil;
+import com.stepienk.libraryapp.utils.LoadImages;
 
 import net.sf.andpdf.pdfviewer.PdfViewerActivity;
 
@@ -83,7 +83,7 @@ public class eBookDetailActivity extends ActionBarActivity {
         descriptionToDownload = title;
         eBookTitle.setText(title);
         eBookDescription.setText(desc);
-        imagesUtil.loadImageFromURL(url, options, imageLoader, pBar, this, eBookPhoto);
+        LoadImages.loadImageFromURL(url, options, imageLoader, pBar, this, eBookPhoto);
 
         btnDownload.setOnClickListener(new View.OnClickListener() {
             @Override

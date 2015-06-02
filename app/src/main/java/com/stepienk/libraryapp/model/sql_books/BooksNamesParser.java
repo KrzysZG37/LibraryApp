@@ -26,8 +26,9 @@ import java.io.OutputStream;
 public class BooksNamesParser implements booksNamesParserInterface {
 
     private HttpEntity httpEntity;
-    private JSONArray jsonArray = null;
     private JSONObject jsonObject;
+    private int tagForTest = 0;
+    private String url = AppConfig.URL_GET_DATA;
 
     /**
      * Function for returning all Books in JSONArray object
@@ -38,11 +39,13 @@ public class BooksNamesParser implements booksNamesParserInterface {
      * @return
      */
     public JSONArray getAllBooks() {
-        if (httpEntity != null)
+        if (tagForTest == 0) {
             httpEntity = downloadBooks();
+        } else {
+        }
 
         // Convert HttpEntity into JSON Array
-        /*JSONArray jsonArray = null;*/
+        JSONArray jsonArray = null;
 
         if (httpEntity != null) {
             try {
@@ -63,6 +66,7 @@ public class BooksNamesParser implements booksNamesParserInterface {
 
         }
 
+
         return jsonArray;
     }
 
@@ -72,11 +76,6 @@ public class BooksNamesParser implements booksNamesParserInterface {
      * @return
      */
     public HttpEntity downloadBooks() {
-        // URL for getting all customers
-        String url = AppConfig.URL_GET_DATA;
-
-        // Get HttpResponse Object from url.
-        // Get HttpEntity from Http Response Object
         HttpEntity httpEntity = null;
 
         try {
@@ -90,13 +89,15 @@ public class BooksNamesParser implements booksNamesParserInterface {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return httpEntity;
     }
+
 
     public void setJsonObject(JSONObject jsonObject) {
         this.jsonObject = jsonObject;
     }
 
-
+    public void setTagForTest(int tag) {
+        this.tagForTest = tag;
+    }
 }

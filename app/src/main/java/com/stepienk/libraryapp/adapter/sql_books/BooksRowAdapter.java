@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.stepienk.libraryapp.utils.imagesUtil;
+import com.stepienk.libraryapp.utils.LoadImages;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -97,7 +97,7 @@ public class BooksRowAdapter extends BaseAdapter {
             holder.bookDescription.setText(json.getString("description"));
             holder.bookDate.setText(json.getString("date"));
             imageUrl = json.getString("image");
-            imagesUtil.loadImageFromURL(imageUrl, options, imageLoader, pBar, activity, img);
+            LoadImages.loadImageFromURL(imageUrl, options, imageLoader, pBar, activity, img);
         } catch (JSONException e) {
             e.printStackTrace();
         }

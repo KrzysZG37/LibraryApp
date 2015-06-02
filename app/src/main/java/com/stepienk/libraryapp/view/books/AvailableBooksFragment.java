@@ -2,7 +2,6 @@ package com.stepienk.libraryapp.view.books;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -13,11 +12,11 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.stepienk.libraryapp.adapter.sql_books.BooksRowAdapter;
+import com.stepienk.libraryapp.async_tasks.GetAllBooksTask;
 import com.stepienk.libraryapp.model.fragments.FragmentFactory;
-import com.stepienk.libraryapp.model.interfaces.booksNamesParserInterface;
 import com.stepienk.libraryapp.model.session.SessionManager;
 import com.stepienk.libraryapp.model.sql_books.BooksNamesParser;
-import com.stepienk.libraryapp.utils.networkAvailableUtil;
+import com.stepienk.libraryapp.utils.NetworkAvailable;
 import com.stepienk.libraryapp.view.fragments_decorator.FragmentDecorator;
 import com.stepienk.libraryapp.view.fragments_decorator.FragmentInterface;
 
@@ -54,9 +53,9 @@ public class AvailableBooksFragment extends FragmentDecorator implements Adapter
 
         session = new SessionManager(getActivity().getApplicationContext());
 
-        if (networkAvailableUtil.isNetworkAvailable(getActivity())) {
+        if (NetworkAvailable.isNetworkAvailable(getActivity())) {
             if (session.isLoggedIn()) {
-                new getAllBooksTask().execute(new BooksNamesParser());
+                new GetAllBooksTask(this).execute(new BooksNamesParser());
             } else {
                 showToast("No connection with database!!!");
             }
@@ -113,54 +112,23 @@ public class AvailableBooksFragment extends FragmentDecorator implements Adapter
         getActivity().overridePendingTransition(R.animator.left_in, R.animator.left_out);
     }
 
-    private class getAllBooksTask extends AsyncTask<booksNamesParserInterface, Long, JSONArray> {
-        /**
-         * Before starting background thread
-         * Show Progress Bar Dialog
-         */
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-
-            pDialog = new ProgressDialog(getActivity());
-            pDialog.setMessage("Loading...");
-            pDialog.show();
-        }
-
-        /**
-         * Downloading data and putting into list of book objects
-         *
-         * @param params - book data
-         * @return
-         */
-        @Override
-        protected JSONArray doInBackground(booksNamesParserInterface... params) {
-            jsonArray = params[0].getAllBooks();
-            return params[0].getAllBooks();
-        }
-
-        /**
-         * After completing background task
-         * Dismiss the progress dialog
-         * *
-         */
-        @Override
-        protected void onPostExecute(JSONArray jsonArray) {
-            if (null != pDialog && pDialog.isShowing()) {
-                pDialog.dismiss();
-                showToast("Books are updated");
-            }
-
-            if (null == jsonArray) {
-                showToast("No data found from web!!!");
-                getActivity().finish();
-            } else {
-                setListAdapter(jsonArray);
-            }
-        }
+    public void showToast(String msg) {
+        Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
     }
 
-    void showToast(String msg) {
-        Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
+    public ProgressDialog getpDialog() {
+        return pDialog;
+    }
+
+    public void setpDialog(ProgressDialog pDialog) {
+        this.pDialog = pDialog;
+    }
+
+    public JSONArray getJsonArray() {
+        return jsonArray;
+    }
+
+    public void setJsonArray(JSONArray jsonArray) {
+        this.jsonArray = jsonArray;
     }
 }

@@ -2,7 +2,7 @@ package unit_tests;
 
 import android.app.Activity;
 
-import com.stepienk.libraryapp.utils.networkAvailableUtil;
+import com.stepienk.libraryapp.utils.NetworkAvailable;
 import com.stepienk.libraryapp.view.main.MainActivity;
 
 import junit.framework.Assert;
@@ -17,12 +17,12 @@ import static org.mockito.Mockito.mock;
  * Created by Krzysiek on 2015-04-21.
  */
 public class IsNetworkAvailableUtilTests {
-    private networkAvailableUtil validateNetwork;
+    private NetworkAvailable validateNetwork;
     private Activity activity;
 
     @Before
     public void setUp() {
-        validateNetwork = new networkAvailableUtil();
+        validateNetwork = new NetworkAvailable();
         activity = mock(MainActivity.class);
     }
 

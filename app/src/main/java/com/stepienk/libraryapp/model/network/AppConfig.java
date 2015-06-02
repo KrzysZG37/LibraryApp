@@ -8,8 +8,8 @@ package com.stepienk.libraryapp.model.network;
 public class AppConfig {
 
     //home url
-    public static final String URL_REGISTER = "http://192.168.1.4/xampp/www/android_login_api/index.php";
-    public static final String URL_GET_DATA = "http://192.168.1.4/xampp/www/android_login_api/getAllBooks.php";
+    public static final String URL_REGISTER = "http://192.168.1.7/xampp/www/android_login_api/index.php";
+    public static final String URL_GET_DATA = "http://192.168.1.7/xampp/www/android_login_api/getAllBooks.php";
 
     //FTIMS url
     //public static final String URL_REGISTER = "http://10.31.61.127/xampp/www/android_login_api/index.php";

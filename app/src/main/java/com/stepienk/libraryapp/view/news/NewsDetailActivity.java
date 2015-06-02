@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.stepienk.libraryapp.utils.imagesUtil;
+import com.stepienk.libraryapp.utils.LoadImages;
 
 import info.androidhive.LibraryApp.R;
 
@@ -56,7 +56,7 @@ public class NewsDetailActivity extends ActionBarActivity {
 
         newsTitle.setText(title);
         newsDescription.setText(desc);
-        imagesUtil.loadImageFromURL(url, options, imageLoader, pBar, this, newsPhoto);
+        LoadImages.loadImageFromURL(url, options, imageLoader, pBar, this, newsPhoto);
     }
 
 

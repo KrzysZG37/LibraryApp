@@ -2,7 +2,6 @@ package com.stepienk.libraryapp.view.ebooks;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -13,12 +12,13 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.stepienk.libraryapp.adapter.dropbox_ebooks.EBooksRowAdapter;
+import com.stepienk.libraryapp.async_tasks.GetAllEbooksTask;
 import com.stepienk.libraryapp.model.dropbox_ebooks.EBookNamesParser;
 import com.stepienk.libraryapp.model.dropbox_ebooks.EBook;
 import com.stepienk.libraryapp.model.fragments.FragmentFactory;
 import com.stepienk.libraryapp.model.interfaces.dropBoxNamesParserInterface;
 import com.stepienk.libraryapp.model.network.AppConfig;
-import com.stepienk.libraryapp.utils.networkAvailableUtil;
+import com.stepienk.libraryapp.utils.NetworkAvailable;
 import com.stepienk.libraryapp.view.fragments_decorator.FragmentDecorator;
 import com.stepienk.libraryapp.view.fragments_decorator.FragmentInterface;
 
@@ -35,7 +35,7 @@ public class eBooksFragment extends FragmentDecorator implements AdapterView.OnI
     private List<EBook> arrayOfList;
     private ListView listView;
     private ProgressDialog pDialog;
-    private dropBoxNamesParserInterface dropBoxNamesParserInterface = new EBookNamesParser();
+    public dropBoxNamesParserInterface dropBoxNamesParserInterface = new EBookNamesParser();
 
     public eBooksFragment(FragmentInterface eBooksFragment) {
         fi = eBooksFragment;
@@ -54,8 +54,8 @@ public class eBooksFragment extends FragmentDecorator implements AdapterView.OnI
         listView = (ListView) v.findViewById(R.id.listview_ebooks);
         setProperClickListener(listView);
 
-        if (networkAvailableUtil.isNetworkAvailable(getActivity())) {
-            new MyTask().execute(rssFeed);
+        if (NetworkAvailable.isNetworkAvailable(getActivity())) {
+            new GetAllEbooksTask(this).execute(rssFeed);
         } else {
             showToast("No Network Connection!!!");
         }
@@ -78,56 +78,6 @@ public class eBooksFragment extends FragmentDecorator implements AdapterView.OnI
     }
 
 
-    class MyTask extends AsyncTask<String, Void, Void> {
-        /**
-         * Before starting background thread
-         * Show Progress Bar Dialog
-         */
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-
-            pDialog = new ProgressDialog(getActivity());
-            pDialog.setMessage("Loading...");
-            pDialog.show();
-        }
-
-        /**
-         * Downloading data and putting into list of eBook objects
-         *
-         * @param params - eBook data
-         * @return
-         */
-        @Override
-        protected Void doInBackground(String... params) {
-            arrayOfList = dropBoxNamesParserInterface.getData(params[0]);
-            return null;
-        }
-
-        /**
-         * After completing background task
-         * Dismiss the progress dialog
-         * *
-         */
-        @Override
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
-
-            if (null != pDialog && pDialog.isShowing()) {
-                pDialog.dismiss();
-                showToast("E-books are updated");
-            }
-
-            if (null == arrayOfList || arrayOfList.size() == 0) {
-                showToast("No data found from web!!!");
-                getActivity().finish();
-            } else {
-                setAdapterToListView();
-            }
-
-        }
-    }
-
     @Override
     public void onPause() {
         super.onPause();
@@ -149,15 +99,30 @@ public class eBooksFragment extends FragmentDecorator implements AdapterView.OnI
         getActivity().overridePendingTransition(R.animator.left_in, R.animator.left_out);
     }
 
-    void setAdapterToListView() {
+    public void setAdapterToListView() {
         EBooksRowAdapter objAdapter = new EBooksRowAdapter(getActivity(), R.layout.ebooks_row,
                 arrayOfList);
         listView.setAdapter(objAdapter);
     }
 
-    void showToast(String msg) {
+    public void showToast(String msg) {
         Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
     }
 
+    public ProgressDialog getpDialog() {
+        return pDialog;
+    }
+
+    public void setpDialog(ProgressDialog pDialog) {
+        this.pDialog = pDialog;
+    }
+
+    public List<EBook> getArrayOfList() {
+        return arrayOfList;
+    }
+
+    public void setArrayOfList(List<EBook> list) {
+        this.arrayOfList = list;
+    }
 
 }

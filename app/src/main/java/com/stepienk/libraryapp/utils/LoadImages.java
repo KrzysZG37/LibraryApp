@@ -15,7 +15,7 @@ import info.androidhive.LibraryApp.R;
 /**
  * Created by Krzysiek on 2015-05-04.
  */
-public class imagesUtil {
+public class LoadImages {
 
     /**
      * Load image from url and place in specific object

@@ -2,7 +2,6 @@ package com.stepienk.libraryapp.view.map;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +9,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-import com.stepienk.libraryapp.utils.networkAvailableUtil;
+import com.stepienk.libraryapp.utils.NetworkAvailable;
 import com.stepienk.libraryapp.view.fragments_decorator.FragmentDecorator;
 import com.stepienk.libraryapp.view.fragments_decorator.FragmentInterface;
 
@@ -43,7 +42,7 @@ public class MapFragment extends FragmentDecorator {
         createProgressDialog();
         assignWebViewLayoutForMapActivity();
 
-        if (networkAvailableUtil.isNetworkAvailable(getActivity())) {
+        if (NetworkAvailable.isNetworkAvailable(getActivity())) {
             myWebView.loadUrl(mapPath);
         } else {
             showToast("No Network Connection!!!");

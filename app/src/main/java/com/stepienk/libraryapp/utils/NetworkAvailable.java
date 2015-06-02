@@ -8,7 +8,7 @@ import android.net.NetworkInfo;
 /**
  * Created by Krzysiek on 2015-03-30.
  */
-public class networkAvailableUtil {
+public class NetworkAvailable {
 
     /**
      * Util function for checking if there is internet connection
