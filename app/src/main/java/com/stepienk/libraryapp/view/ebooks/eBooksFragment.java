@@ -31,7 +31,7 @@ import info.androidhive.LibraryApp.R;
  */
 public class eBooksFragment extends FragmentDecorator implements AdapterView.OnItemClickListener {
 
-    private static final String rssFeed = AppConfig.URL_E_BOOKS_RDD_FEED;
+    private static final String rssFeed = AppConfig.URL_E_BOOKS_RSS_FEED;
     private List<EBook> arrayOfList;
     private ListView listView;
     private ProgressDialog pDialog;

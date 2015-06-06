@@ -40,6 +40,7 @@
     <string name="bookDescription">description</string>
     <string name="download">Download</string>
     <string name="reserve">Reserve</string>
+    <string name="giveBack">Give Back</string>
     <string name="show">Show</string>
     <string name="appLogo">Logo of the app</string>
     <string name="appLogoImage">Image of the app</string>

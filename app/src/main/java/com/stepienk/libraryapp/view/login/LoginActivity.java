@@ -14,18 +14,18 @@ import com.android.volley.Request.Method;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-
-import info.androidhive.LibraryApp.R;
-
-import com.stepienk.libraryapp.model.session.SessionManager;
 import com.stepienk.libraryapp.model.network.AppConfig;
+import com.stepienk.libraryapp.model.session.SessionManager;
 import com.stepienk.libraryapp.model.sql_login.AppController;
+import com.stepienk.libraryapp.model.user.User;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import info.androidhive.LibraryApp.R;
 
 /**
  * Created by Krzysiek on 2015-03-30.
@@ -38,6 +38,7 @@ public class LoginActivity extends Activity {
     private EditText inputPassword;
     private ProgressDialog pDialog;
     private SessionManager session;
+    private User read = new User(this);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -125,6 +126,8 @@ public class LoginActivity extends Activity {
                         session.setLogin(true);
 
                         Intent intent = new Intent(LoginActivity.this, WelcomeActivity.class);
+                        intent.putExtra("user_name", email);
+                        read.writeUserNameToFile(email);
                         startActivity(intent);
                         finish();
                     } else {

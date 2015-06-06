@@ -1,11 +1,10 @@
-package com.stepienk.libraryapp.model.sql_books;
+package com.stepienk.libraryapp.model.sql_available_books;
 
 import android.util.Log;
 
 import com.stepienk.libraryapp.model.interfaces.booksNamesParserInterface;
 import com.stepienk.libraryapp.model.network.AppConfig;
 
-import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -17,8 +16,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 
 /**
  * Created by stepienk on 2015-04-07.
@@ -28,7 +25,10 @@ public class BooksNamesParser implements booksNamesParserInterface {
     private HttpEntity httpEntity;
     private JSONObject jsonObject;
     private int tagForTest = 0;
-    private String url = AppConfig.URL_GET_DATA;
+    private String url = AppConfig.URL_GET_AVAILABLE_BOOKS;
+   /* private AppConfig appConfig;
+    private String url = appConfig.URL_GET_RESERVED_BOOKS;
+*/
 
     /**
      * Function for returning all Books in JSONArray object

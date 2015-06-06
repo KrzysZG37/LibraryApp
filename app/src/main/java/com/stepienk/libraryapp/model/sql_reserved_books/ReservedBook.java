@@ -1,10 +1,10 @@
-package com.stepienk.libraryapp.model.sql_books;
+package com.stepienk.libraryapp.model.sql_reserved_books;
 
 /**
  * Created by Krzysiek on 2015-04-14.
  * Book object for holding all data
  */
-public class Book {
+public class ReservedBook {
 
     private int id;
     private String name;

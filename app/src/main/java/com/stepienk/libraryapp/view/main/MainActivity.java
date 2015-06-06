@@ -25,6 +25,7 @@ import com.stepienk.libraryapp.model.navigation_drawer.NavDrawerItem;
 import com.stepienk.libraryapp.model.session.SessionManager;
 import com.stepienk.libraryapp.model.sql_login.SQLiteHandler;
 import com.stepienk.libraryapp.model.fragments.FragmentFactory;
+import com.stepienk.libraryapp.model.user.User;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,6 +50,7 @@ public class MainActivity extends ActionBarActivity {
     private SQLiteHandler db;
     private SessionManager session;
     private FragmentFactory fragmentFactory = new FragmentFactory();
+    private User read = new User(this);
 
     public MainActivity() {
     }
@@ -57,7 +59,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.drawer_main);
-
+        read.readUserNameFromFile();
         createToolbar();
         assignLayoutForMainActivity();
         addItemsToDrawer();
@@ -213,11 +215,10 @@ public class MainActivity extends ActionBarActivity {
         session = new SessionManager(this);
         HashMap<String, String> user = db.getUserDetails();
 
-        String name = user.get("name");
-        String email = user.get("email");
+        String name = read.getUserName();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("E-mail: " + email).setTitle("User: " + name);
+        builder.setMessage("Welcome in LibraryApp!").setTitle("User: " + name);
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
             }

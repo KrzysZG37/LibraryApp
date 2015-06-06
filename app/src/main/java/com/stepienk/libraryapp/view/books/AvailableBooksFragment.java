@@ -11,11 +11,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.stepienk.libraryapp.adapter.sql_books.BooksRowAdapter;
+import com.stepienk.libraryapp.adapter.sql_available_books.BooksRowAdapter;
 import com.stepienk.libraryapp.async_tasks.GetAllBooksTask;
 import com.stepienk.libraryapp.model.fragments.FragmentFactory;
 import com.stepienk.libraryapp.model.session.SessionManager;
-import com.stepienk.libraryapp.model.sql_books.BooksNamesParser;
+import com.stepienk.libraryapp.model.sql_available_books.BooksNamesParser;
 import com.stepienk.libraryapp.utils.NetworkAvailable;
 import com.stepienk.libraryapp.view.fragments_decorator.FragmentDecorator;
 import com.stepienk.libraryapp.view.fragments_decorator.FragmentInterface;

@@ -1,21 +1,20 @@
 package com.stepienk.libraryapp.async_tasks;
 
-import android.app.ProgressDialog;
 import android.os.AsyncTask;
 
 import com.stepienk.libraryapp.model.interfaces.booksNamesParserInterface;
-import com.stepienk.libraryapp.view.books.AvailableBooksFragment;
+import com.stepienk.libraryapp.view.books.ReservedBooksFragment;
 
 import org.json.JSONArray;
 
 /**
  * Created by Krzysiek on 2015-06-02.
  */
-public class GetAllBooksTask extends AsyncTask<booksNamesParserInterface, Long, JSONArray> {
-    private AvailableBooksFragment availableBooksFragment;
+public class GetAllReservedBooksTask extends AsyncTask<booksNamesParserInterface, Long, JSONArray> {
+    private ReservedBooksFragment reservedBooksFragment;
 
-    public GetAllBooksTask(AvailableBooksFragment availableBooksFragment) {
-        this.availableBooksFragment = availableBooksFragment;
+    public GetAllReservedBooksTask(ReservedBooksFragment reservedBooksFragment) {
+        this.reservedBooksFragment = reservedBooksFragment;
     }
 
     /**
@@ -25,9 +24,9 @@ public class GetAllBooksTask extends AsyncTask<booksNamesParserInterface, Long, 
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        availableBooksFragment.setpDialog(new ProgressDialog(availableBooksFragment.getActivity()));
+ /*       availableBooksFragment.setpDialog(new ProgressDialog(availableBooksFragment.getActivity()));
         availableBooksFragment.getpDialog().setMessage("Loading...");
-        availableBooksFragment.getpDialog().show();
+        availableBooksFragment.getpDialog().show();*/
     }
 
     /**
@@ -38,7 +37,7 @@ public class GetAllBooksTask extends AsyncTask<booksNamesParserInterface, Long, 
      */
     @Override
     protected JSONArray doInBackground(booksNamesParserInterface... params) {
-        availableBooksFragment.setJsonArray(params[0].getAllBooks());
+        reservedBooksFragment.setJsonArray(params[0].getAllBooks());
         return params[0].getAllBooks();
     }
 
@@ -49,15 +48,15 @@ public class GetAllBooksTask extends AsyncTask<booksNamesParserInterface, Long, 
      */
     @Override
     protected void onPostExecute(JSONArray jsonArray) {
-        if (null != availableBooksFragment.getpDialog() && availableBooksFragment.getpDialog().isShowing()) {
-            availableBooksFragment.getpDialog().dismiss();
-            availableBooksFragment.showToast("Books are updated");
+        if (null != reservedBooksFragment.getpDialog() && reservedBooksFragment.getpDialog().isShowing()) {
+            reservedBooksFragment.getpDialog().dismiss();
+            reservedBooksFragment.showToast("Books are updated");
         }
 
         if (null == jsonArray) {
-            availableBooksFragment.showToast("No data found from web!!!");
+            reservedBooksFragment.showToast("No data found from web!!!");
         } else {
-            availableBooksFragment.setListAdapter(jsonArray);
+            reservedBooksFragment.setListAdapter(jsonArray);
         }
     }
 }

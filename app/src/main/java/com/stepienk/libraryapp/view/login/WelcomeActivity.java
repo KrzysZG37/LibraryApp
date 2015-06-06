@@ -3,6 +3,7 @@ package com.stepienk.libraryapp.view.login;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -37,26 +38,29 @@ public class WelcomeActivity extends Activity {
 
         db = new SQLiteHandler(getApplicationContext());
         session = new SessionManager(getApplicationContext());
+        Bundle b = getIntent().getExtras();
 
         if (!session.isLoggedIn()) {
             logoutUser();
         }
         // Fetching user details from sqLite
         HashMap<String, String> user = db.getUserDetails();
-        assignControlsForWelcomeActivity(user);
+        assignControlsForWelcomeActivity(b);
     }
 
-    public void assignControlsForWelcomeActivity(HashMap<String, String> user) {
+    public void assignControlsForWelcomeActivity(Bundle b) {
         txtName = (TextView) findViewById(R.id.name);
         txtEmail = (TextView) findViewById(R.id.email);
         btnLogout = (Button) findViewById(R.id.btnLogout);
         btnNews = (Button) findViewById(R.id.btnNews);
-        String name = user.get("name");
-        String email = user.get("email");
+        String name = "";
+
+        if (b != null) {
+            name = b.getString("user_name");
+        }
 
         // Displaying the user details on the screen
         txtName.setText(name);
-        txtEmail.setText(email);
 
         // Logout button click event
         btnLogout.setOnClickListener(new View.OnClickListener() {

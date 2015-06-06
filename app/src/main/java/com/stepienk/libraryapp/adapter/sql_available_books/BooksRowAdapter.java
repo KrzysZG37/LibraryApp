@@ -1,4 +1,4 @@
-package com.stepienk.libraryapp.adapter.sql_books;
+package com.stepienk.libraryapp.adapter.sql_available_books;
 
 import android.app.Activity;
 import android.content.Context;

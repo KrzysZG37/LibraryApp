@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="info.androidhive.LibraryApp"
+    android:supportsRtl="true"
     android:versionCode="1"
-    android:versionName="1.0"
-    android:supportsRtl="true">
+    android:versionName="1.0">
 
     <!-- Permission: Allow Connect to Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -64,6 +64,11 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.stepienk.libraryapp.view.books.AvailableBooksDetailsActivity"
+            android:label="Details"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.stepienk.libraryapp.view.books.ReservedBooksDetailsActivity"
             android:label="Details"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme" />
