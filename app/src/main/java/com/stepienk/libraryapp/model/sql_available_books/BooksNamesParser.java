@@ -26,9 +26,6 @@ public class BooksNamesParser implements booksNamesParserInterface {
     private JSONObject jsonObject;
     private int tagForTest = 0;
     private String url = AppConfig.URL_GET_AVAILABLE_BOOKS;
-   /* private AppConfig appConfig;
-    private String url = appConfig.URL_GET_RESERVED_BOOKS;
-*/
 
     /**
      * Function for returning all Books in JSONArray object
@@ -63,9 +60,7 @@ public class BooksNamesParser implements booksNamesParserInterface {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
         }
-
 
         return jsonArray;
     }

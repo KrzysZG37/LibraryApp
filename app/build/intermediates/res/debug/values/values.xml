@@ -368,6 +368,7 @@ available. Please contact the developer for assistance.</string>
     <string name="fragment_title_e_books">E-Books</string>
     <string name="fragment_title_map">Map</string>
     <string name="fragment_title_news">News</string>
+    <string name="giveBack">Give Back</string>
     <string name="hint_email">Email</string>
     <string name="hint_name">Full name</string>
     <string name="hint_password">Password</string>

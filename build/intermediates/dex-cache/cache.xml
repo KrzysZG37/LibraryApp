@@ -9,13 +9,6 @@
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-483e7a6456d45a98dab9224ea450bcdd20c5f2c7.jar" />
     </item>
     <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-da8dd30adc4809a1dbc1d0d78be645000adc8e49.jar" />
-    </item>
-    <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\libs\powermock-mockito-1.6.2-full.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -51,25 +44,11 @@
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\junit-4.7-7c6453cdcae7a5ab545249cc1f41a259153893cc.jar" />
     </item>
     <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-676d87ac348670bc208d73681231e23ad56d718d.jar" />
-    </item>
-    <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-cd1db7e1cbd19c044a5deac662338b3dc4568e23.jar" />
-    </item>
-    <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-30165ff043d37097bda9c761d4a49c0d543e34e2.jar" />
     </item>
     <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
@@ -86,32 +65,11 @@
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-d4257b6a5d8d8fc7c9826745525a4f2df921be21.jar" />
     </item>
     <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-acc6883477866fab1f1b24783392bc2d41dbca4f.jar" />
-    </item>
-    <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\libs\jtds-1.3.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="1fc4d17efa80dc375767b0c1006584175212e9dc">
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\jtds-1.3.1-3b434d1d588a9dba95df28cf2d2c01bdb44d9eb7.jar" />
-    </item>
-    <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-6ec3df17e3b33ff745e024e681a402213352017c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-01d8ec03fef8d7720d2405c4bcdd9437203ac0c5.jar" />
     </item>
     <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\libs\volley.jar"
@@ -135,25 +93,11 @@
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.2.1-894882258f1efc4b3f7407269b89aa6b82777a49.jar" />
     </item>
     <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-63c7c5720fb208c308a71cb6b44a5aae39df5499.jar" />
-    </item>
-    <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c6d79137693d494dee16372d3921f919eb724ced">
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-e8caf808ed3613cfd2722439f3a870d8b922e990.jar" />
-    </item>
-    <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-b899e46b22875a441134246b7b36ddf00a57680f.jar" />
     </item>
     <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\classes.jar"
@@ -170,13 +114,6 @@
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-48b10c47dd02d1bcc494c5ab12a576eee49f70c3.jar" />
     </item>
     <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-efd1da5414552f926cbd23ee61237e2a7f1db240.jar" />
-    </item>
-    <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -184,25 +121,11 @@
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-31d6574c50a94fe17807ba805504fb799910d130.jar" />
     </item>
     <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-e1a8fdf81869687b09c7f620c4fc6523218b7642.jar" />
-    </item>
-    <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-621f86f30af35d1dee9b8c08682a07082cfcf9e4.jar" />
-    </item>
-    <item
-        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\libs\robotium-solo-5.3.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e6e664ab1b59d2504c3529f128747c13487f96ca">
-        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\robotium-solo-5.3.1-c6f26e4e75dd7b1d8ec6c5e1b8e75bd64b40b2de.jar" />
     </item>
     <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\libs\PdfViewer.jar"
@@ -224,6 +147,83 @@
         revision="21.1.2"
         sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
         <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-e67c09005ebf565b72f542d89d14ae16f26724b0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-da8dd30adc4809a1dbc1d0d78be645000adc8e49.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-676d87ac348670bc208d73681231e23ad56d718d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-30165ff043d37097bda9c761d4a49c0d543e34e2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-acc6883477866fab1f1b24783392bc2d41dbca4f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-6ec3df17e3b33ff745e024e681a402213352017c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-01d8ec03fef8d7720d2405c4bcdd9437203ac0c5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-63c7c5720fb208c308a71cb6b44a5aae39df5499.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-b899e46b22875a441134246b7b36ddf00a57680f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-efd1da5414552f926cbd23ee61237e2a7f1db240.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\classes-e1a8fdf81869687b09c7f620c4fc6523218b7642.jar" />
+    </item>
+    <item
+        jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\libs\robotium-solo-5.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e6e664ab1b59d2504c3529f128747c13487f96ca">
+        <dex dex="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\pre-dexed\debug\robotium-solo-5.3.1-c6f26e4e75dd7b1d8ec6c5e1b8e75bd64b40b2de.jar" />
     </item>
     <item
         jar="C:\Users\Krzysiek\Documents\ADVANCED_JAVA\ADVANCED_JAVAwc\branches\SlidingMenu\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\classes.jar"

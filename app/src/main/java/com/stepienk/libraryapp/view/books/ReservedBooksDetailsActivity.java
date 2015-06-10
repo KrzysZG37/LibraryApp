@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.stepienk.libraryapp.async_tasks.GiveBackBooksThread;
+import com.stepienk.libraryapp.model.network.AppConfig;
 import com.stepienk.libraryapp.utils.LoadImages;
 
 import info.androidhive.LibraryApp.R;
@@ -27,6 +29,8 @@ public class ReservedBooksDetailsActivity extends ActionBarActivity {
     private ImageView bookPhoto;
     private Button btnReserve;
     private Toolbar toolbar;
+    private AppConfig appConfig = new AppConfig();
+    private GiveBackBooksThread giveBackBooksThread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +63,7 @@ public class ReservedBooksDetailsActivity extends ActionBarActivity {
         final String title = b.getString("name");
         final String desc = b.getString("desc");
         final String date = b.getString("date");
+        final String idOfBook = b.getString("id");
 
         bookTitle.setText(title);
         bookDescription.setText(desc);
@@ -73,6 +78,11 @@ public class ReservedBooksDetailsActivity extends ActionBarActivity {
             public void onClick(View arg0) {
                 btnReserve.setBackgroundResource(R.color.bg_login);
                 btnReserve.setText("Returned");
+                giveBackBooksThread = new GiveBackBooksThread();
+                giveBackBooksThread.setUrlToGiveBackBook(appConfig.URL_GIVE_BACK_BOOK + idOfBook);
+                giveBackBooksThread.start();
+
+                btnReserve.setEnabled(false);
             }
         });
     }

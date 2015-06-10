@@ -12,6 +12,8 @@ public class AppConfig {
     public static final String URL_REGISTER = "http://192.168.1.7/xampp/www/android_login_api/index.php";
     public static final String URL_GET_AVAILABLE_BOOKS = "http://192.168.1.7/xampp/www/android_login_api/getAllBooks.php";
     public final String URL_GET_RESERVED_BOOKS = "http://192.168.1.7/xampp/www/android_login_api/getAllReservedBooks.php?var1=" + User.nameForData;
+    public final String URL_RESERVE_BOOK = "http://192.168.1.7/xampp/www/android_login_api/reserveBook.php?var1=" + User.nameForData;
+    public final String URL_GIVE_BACK_BOOK = "http://192.168.1.7/xampp/www/android_login_api/giveBackBook.php?var1=";
 
 
     //FTIMS url

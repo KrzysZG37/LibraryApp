@@ -2,7 +2,7 @@
 manifest
 ADDED from AndroidManifest.xml:2:1
 	android:supportsRtl
-		ADDED from AndroidManifest.xml:7:5
+		ADDED from AndroidManifest.xml:5:5
 	xmlns:tools
 		ADDED from AndroidManifest.xml:3:5
 	xmlns:android
@@ -12,9 +12,9 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 	android:versionName
-		ADDED from AndroidManifest.xml:6:5
+		ADDED from AndroidManifest.xml:7:5
 	android:versionCode
-		ADDED from AndroidManifest.xml:5:5
+		ADDED from AndroidManifest.xml:6:5
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 uses-permission#android.permission.INTERNET
@@ -329,7 +329,7 @@ ADDED from AndroidManifest.xml:65:9
 		ADDED from AndroidManifest.xml:66:13
 	android:launchMode
 		ADDED from AndroidManifest.xml:68:13
-activity#com.stepienk.libraryapp.view.ebooks.eBookShowPdfActivity
+activity#com.stepienk.libraryapp.view.books.ReservedBooksDetailsActivity
 ADDED from AndroidManifest.xml:70:9
 	android:label
 		ADDED from AndroidManifest.xml:72:13
@@ -339,7 +339,7 @@ ADDED from AndroidManifest.xml:70:9
 		ADDED from AndroidManifest.xml:71:13
 	android:launchMode
 		ADDED from AndroidManifest.xml:73:13
-activity#com.stepienk.libraryapp.view.login.RegisterActivity
+activity#com.stepienk.libraryapp.view.ebooks.eBookShowPdfActivity
 ADDED from AndroidManifest.xml:75:9
 	android:label
 		ADDED from AndroidManifest.xml:77:13
@@ -349,7 +349,7 @@ ADDED from AndroidManifest.xml:75:9
 		ADDED from AndroidManifest.xml:76:13
 	android:launchMode
 		ADDED from AndroidManifest.xml:78:13
-activity#com.stepienk.libraryapp.view.login.WelcomeActivity
+activity#com.stepienk.libraryapp.view.login.RegisterActivity
 ADDED from AndroidManifest.xml:80:9
 	android:label
 		ADDED from AndroidManifest.xml:82:13
@@ -359,6 +359,16 @@ ADDED from AndroidManifest.xml:80:9
 		ADDED from AndroidManifest.xml:81:13
 	android:launchMode
 		ADDED from AndroidManifest.xml:83:13
+activity#com.stepienk.libraryapp.view.login.WelcomeActivity
+ADDED from AndroidManifest.xml:85:9
+	android:label
+		ADDED from AndroidManifest.xml:87:13
+	android:theme
+		ADDED from AndroidManifest.xml:89:13
+	android:name
+		ADDED from AndroidManifest.xml:86:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:88:13
 activity#android.support.v7.widget.TestActivity
 ADDED from com.android.support:recyclerview-v7:22.0.0:23:9
 	android:label

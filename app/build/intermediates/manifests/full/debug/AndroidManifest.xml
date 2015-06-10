@@ -65,6 +65,11 @@
             android:launchMode="singleTop"
             android:theme="@style/AppTheme" />
         <activity
+            android:name="com.stepienk.libraryapp.view.books.ReservedBooksDetailsActivity"
+            android:label="Details"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name="com.stepienk.libraryapp.view.ebooks.eBookShowPdfActivity"
             android:label="E-book details"
             android:launchMode="singleTop"

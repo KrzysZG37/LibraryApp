@@ -61,9 +61,7 @@ public class ReservedBooksNamesParser implements booksNamesParserInterface {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
         }
-
 
         return jsonArray;
     }

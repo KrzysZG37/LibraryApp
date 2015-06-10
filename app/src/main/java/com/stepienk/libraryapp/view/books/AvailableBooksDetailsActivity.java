@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.stepienk.libraryapp.async_tasks.ReserveBooksThread;
+import com.stepienk.libraryapp.model.network.AppConfig;
 import com.stepienk.libraryapp.utils.LoadImages;
 
 import info.androidhive.LibraryApp.R;
@@ -28,6 +30,8 @@ public class AvailableBooksDetailsActivity extends ActionBarActivity {
     private ImageView bookPhoto;
     private Button btnReserve;
     private Toolbar toolbar;
+    private AppConfig appConfig = new AppConfig();
+    ReserveBooksThread reserveBooksThread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +64,7 @@ public class AvailableBooksDetailsActivity extends ActionBarActivity {
         final String title = b.getString("name");
         final String desc = b.getString("desc");
         final String date = b.getString("date");
+        final String idOfBook = b.getString("id");
 
         bookTitle.setText(title);
         bookDescription.setText(desc);
@@ -74,10 +79,14 @@ public class AvailableBooksDetailsActivity extends ActionBarActivity {
             public void onClick(View arg0) {
                 btnReserve.setBackgroundResource(R.color.bg_login);
                 btnReserve.setText("Reserved");
+                reserveBooksThread = new ReserveBooksThread();
+                reserveBooksThread.setUrlToReserveBook(appConfig.URL_RESERVE_BOOK + "&var2=" + idOfBook);
+                reserveBooksThread.start();
+
+                btnReserve.setEnabled(false);
             }
         });
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

@@ -92,6 +92,7 @@ public class AvailableBooksFragment extends FragmentDecorator implements Adapter
         String description = null;
         String date = null;
         String image = null;
+        String idOfBook = null;
 
         try {
             jsonObject = jsonArray.getJSONObject(position);
@@ -99,6 +100,7 @@ public class AvailableBooksFragment extends FragmentDecorator implements Adapter
             description = jsonObject.getString("description");
             date = jsonObject.getString("date");
             image = jsonObject.getString("image");
+            idOfBook = jsonObject.getString("id");
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -108,6 +110,7 @@ public class AvailableBooksFragment extends FragmentDecorator implements Adapter
         intent.putExtra("desc", description);
         intent.putExtra("date", date);
         intent.putExtra("image", image);
+        intent.putExtra("id", idOfBook);
         startActivity(intent);
         getActivity().overridePendingTransition(R.animator.left_in, R.animator.left_out);
     }

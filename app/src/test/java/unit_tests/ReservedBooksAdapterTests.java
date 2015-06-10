@@ -1,6 +1,6 @@
 package unit_tests;
 
-import com.stepienk.libraryapp.model.sql_available_books.BooksNamesParser;
+import com.stepienk.libraryapp.model.sql_reserved_books.ReservedBooksNamesParser;
 
 import junit.framework.Assert;
 
@@ -13,26 +13,26 @@ import org.junit.Test;
 import static org.mockito.Mockito.mock;
 
 /**
- * Created by stepienk on 2015-05-29.
+ * Created by Krzysiek on 2015-06-09.
  */
-public class BooksAdapterTests {
+public class ReservedBooksAdapterTests {
 
-    private BooksNamesParser booksNamesParser;
+    private ReservedBooksNamesParser reservedBooksNamesParser;
     private JSONObject jsonResponse = mock(JSONObject.class);
     private JSONArray jsonArray = mock(JSONArray.class);
 
     @Before
     public void setUp() {
-        booksNamesParser = new BooksNamesParser();
+        reservedBooksNamesParser = new ReservedBooksNamesParser();
     }
 
     @Test
     public void shouldReturnJsonWithBookContent() throws JSONException {
         setUpJson();
-        booksNamesParser.setTagForTest(1);
-        booksNamesParser.setJsonObject(jsonResponse);
-        booksNamesParser.getAllBooks();
-        jsonArray = booksNamesParser.getAllBooks();
+        reservedBooksNamesParser.setTagForTest(1);
+        reservedBooksNamesParser.setJsonObject(jsonResponse);
+        reservedBooksNamesParser.getAllBooks();
+        jsonArray = reservedBooksNamesParser.getAllBooks();
         Assert.assertNotNull(jsonArray);
     }
 
