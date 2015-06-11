@@ -1,6 +1,7 @@
 package com.stepienk.libraryapp.model.dropbox_news;
 
 import android.content.res.Resources;
+import android.util.Log;
 
 import com.stepienk.libraryapp.model.interfaces.dropBoxNamesParserInterface;
 
@@ -74,7 +75,6 @@ public class NewsNamesParser implements dropBoxNamesParserInterface {
                 doc = db.parse(inputStream);
             }
 
-
             doc.getDocumentElement().normalize();
 
             nList = doc.getElementsByTagName("item");
@@ -110,6 +110,7 @@ public class NewsNamesParser implements dropBoxNamesParserInterface {
         objNews.setDesc(getTagValue("desc", eElement));
         objNews.setPubDate(getTagValue("pubDate", eElement));
         objNews.setLink(getTagValue("link", eElement));
+        Log.d("setTagValueForNews", "getting tags from xml");
     }
 
     public void setTagForTest(int tag) {

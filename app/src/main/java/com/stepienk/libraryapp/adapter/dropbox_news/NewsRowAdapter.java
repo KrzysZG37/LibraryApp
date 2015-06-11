@@ -3,6 +3,7 @@ package com.stepienk.libraryapp.adapter.dropbox_news;
 import android.app.Activity;
 import android.content.Context;
 import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -105,7 +106,7 @@ public class NewsRowAdapter extends ArrayAdapter<News> {
      *
      * @param holder- news holder to keep title, description, date and image url
      */
-    private void setDataInNewsFragment(NewsViewHolder holder) {
+    public void setDataInNewsFragment(NewsViewHolder holder) {
         setTitleInNewsViewHolder(holder);
         setDescriptionInNewsViewHolder(holder);
         setDateInNewsViewHolder(holder);
@@ -158,11 +159,20 @@ public class NewsRowAdapter extends ArrayAdapter<News> {
                                 pBar.setVisibility(View.VISIBLE);
                             }
                         });
-
+                Log.d("setImageInNews", "download image");
             } else {
                 holder.newsImage.setImageResource(R.drawable.ic_home);
+                Log.d("setImageInNews", "set default image");
             }
         }
+    }
+
+    public News getObjBean() {
+        return objBean;
+    }
+
+    public void setObjBean(News objBean) {
+        this.objBean = objBean;
     }
 
 

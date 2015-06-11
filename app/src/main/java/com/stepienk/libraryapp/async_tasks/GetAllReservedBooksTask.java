@@ -24,9 +24,6 @@ public class GetAllReservedBooksTask extends AsyncTask<booksNamesParserInterface
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
- /*       availableBooksFragment.setpDialog(new ProgressDialog(availableBooksFragment.getActivity()));
-        availableBooksFragment.getpDialog().setMessage("Loading...");
-        availableBooksFragment.getpDialog().show();*/
     }
 
     /**

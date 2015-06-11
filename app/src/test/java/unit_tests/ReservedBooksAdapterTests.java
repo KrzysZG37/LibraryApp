@@ -1,5 +1,10 @@
 package unit_tests;
 
+import android.app.Activity;
+import android.widget.TextView;
+
+import com.stepienk.libraryapp.adapter.sql_reserved_books.ReservedBooksRowAdapter;
+import com.stepienk.libraryapp.adapter.sql_reserved_books.ReservedBooksViewHolder;
 import com.stepienk.libraryapp.model.sql_reserved_books.ReservedBooksNamesParser;
 
 import junit.framework.Assert;
@@ -9,6 +14,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Iterator;
 
 import static org.mockito.Mockito.mock;
 
@@ -36,7 +43,6 @@ public class ReservedBooksAdapterTests {
         Assert.assertNotNull(jsonArray);
     }
 
-
     public void setUpJson() {
         try {
             jsonResponse.put("name", "Test Book");
@@ -49,4 +55,5 @@ public class ReservedBooksAdapterTests {
             e.printStackTrace();
         }
     }
+
 }

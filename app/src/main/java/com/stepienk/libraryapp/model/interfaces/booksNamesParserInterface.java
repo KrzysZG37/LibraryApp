@@ -1,5 +1,6 @@
 package com.stepienk.libraryapp.model.interfaces;
 
+import org.apache.http.HttpEntity;
 import org.json.JSONArray;
 
 /**
@@ -7,4 +8,5 @@ import org.json.JSONArray;
  */
 public interface booksNamesParserInterface {
     public JSONArray getAllBooks();
+    public HttpEntity downloadBooks();
 }

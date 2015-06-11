@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="org.codehaus.groovy" module="groovy-all" revision="2.2.2" status="release" publication="20150602150918">
+  <info organisation="org.codehaus.groovy" module="groovy-all" revision="2.2.2" status="release" publication="20150610221736">
     <license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
     <description homepage="http://groovy.codehaus.org/">Groovy: A powerful, dynamic language for the JVM</description>
   </info>

@@ -16,11 +16,6 @@ public class User {
     private String name = "";
     public static String nameForData = "";
 
-    /**
-     * Default Constructor
-     *
-     * @param context activity's context
-     */
     public User(Context context) {
         this.mContext = context;
     }
@@ -32,14 +27,11 @@ public class User {
      * @param name String with name of the user
      */
     public void writeUserNameToFile(String name) {
-        // add-write text into file
         try {
             FileOutputStream fileout = mContext.openFileOutput("mytextfile.txt", mContext.MODE_PRIVATE);
             OutputStreamWriter outputWriter = new OutputStreamWriter(fileout);
             outputWriter.write(name);
             outputWriter.close();
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }

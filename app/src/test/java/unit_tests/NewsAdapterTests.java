@@ -1,7 +1,10 @@
 package unit_tests;
 
+import android.app.Activity;
 import android.content.res.Resources;
 
+import com.stepienk.libraryapp.adapter.dropbox_news.NewsRowAdapter;
+import com.stepienk.libraryapp.adapter.dropbox_news.NewsViewHolder;
 import com.stepienk.libraryapp.model.dropbox_news.News;
 import com.stepienk.libraryapp.model.dropbox_news.NewsNamesParser;
 
@@ -33,15 +36,23 @@ import static org.mockito.Mockito.when;
 public class NewsAdapterTests {
     private List<News> listArray;
     private NewsNamesParser newsNamesParser;
+    private NewsRowAdapter newsRowAdapter;
+    private Activity activity;
+    private News objBean;
     private static final String rssFeed = "https://www.dropbox.com/s/25ycugan9rpc25e/imagelistview.xml?dl=1";
     private int id;
     private String title;
     private String pubDate;
     private InputStream inputStream;
     private Resources resources;
+    private NewsViewHolder holder;
 
     @Before
     public void setUp() {
+        activity = mock(Activity.class);
+        objBean = new News();
+        holder = new NewsViewHolder();
+        newsRowAdapter = new NewsRowAdapter(activity, R.layout.news_row, listArray);
         newsNamesParser = new NewsNamesParser();
         inputStream = mock(InputStream.class);
         resources = mock(Resources.class);
@@ -93,6 +104,17 @@ public class NewsAdapterTests {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void shouldSetDataInNewsFragment() {
+        objBean.setTitle("test title");
+        objBean.setDesc("test description");
+        objBean.setId("1");
+        objBean.setLink("http://test.link");
+        objBean.setPubDate("01-02-2015");
+        newsRowAdapter.setObjBean(objBean);
+        newsRowAdapter.setDataInNewsFragment(holder);
     }
 
 

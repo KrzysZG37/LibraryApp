@@ -1,5 +1,7 @@
 package com.stepienk.libraryapp.model.dropbox_ebooks;
 
+import android.util.Log;
+
 import com.stepienk.libraryapp.model.interfaces.dropBoxNamesParserInterface;
 
 import org.w3c.dom.Document;
@@ -71,7 +73,6 @@ public class EBookNamesParser implements dropBoxNamesParserInterface {
                 doc = db.parse(inputStream);
             }
 
-
             doc.getDocumentElement().normalize();
 
             nList = doc.getElementsByTagName("item");
@@ -109,6 +110,7 @@ public class EBookNamesParser implements dropBoxNamesParserInterface {
         objEBook.setPubDate(getTagValue("pubDate", eElement));
         objEBook.setLink(getTagValue("link", eElement));
         objEBook.setPdfLink(getTagValue("pdflink", eElement));
+        Log.d("setTagValueForEBook", "getting tags from xml");
     }
 
     public void setTagForTest(int tag) {

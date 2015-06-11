@@ -2,6 +2,7 @@ package com.stepienk.libraryapp.adapter.sql_available_books;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -97,7 +98,9 @@ public class BooksRowAdapter extends BaseAdapter {
             holder.bookDescription.setText(json.getString("description"));
             holder.bookDate.setText(json.getString("date"));
             imageUrl = json.getString("image");
+            Log.d("setDataInBookFragment", "downloading data from json");
             LoadImages.loadImageFromURL(imageUrl, options, imageLoader, pBar, activity, img);
+            Log.d("setDataInBookFragment", "uploading photo from url");
         } catch (JSONException e) {
             e.printStackTrace();
         }

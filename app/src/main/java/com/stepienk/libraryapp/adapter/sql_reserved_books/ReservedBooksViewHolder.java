@@ -4,10 +4,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
-* Created by Krzysiek on 2015-04-20.
+ * Created by Krzysiek on 2015-04-20.
  * Class for managing all data included in each reserved book object
-*/
-class ReservedBooksViewHolder {
+ */
+public class ReservedBooksViewHolder {
     public TextView bookName;
     public TextView bookDescription;
     public TextView bookDate;

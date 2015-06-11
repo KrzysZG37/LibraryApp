@@ -8,7 +8,7 @@ import android.widget.TextView;
  * Created by Krzysiek on 2015-04-20.
  * Class for managing all data included in each News object
  */
-class NewsViewHolder {
+public class NewsViewHolder {
     public TextView newsTitle;
     public TextView newsDescription;
     public TextView newsDate;

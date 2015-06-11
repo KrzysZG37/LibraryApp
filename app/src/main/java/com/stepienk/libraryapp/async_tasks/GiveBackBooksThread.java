@@ -12,7 +12,6 @@ public class GiveBackBooksThread extends Thread {
     private HttpClient client = new DefaultHttpClient();
     private String urlToGiveBackBook;
 
-
     /*
     Runs HttpClient to return specified book
      */

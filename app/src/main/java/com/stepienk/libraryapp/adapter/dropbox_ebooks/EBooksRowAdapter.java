@@ -3,6 +3,7 @@ package com.stepienk.libraryapp.adapter.dropbox_ebooks;
 import android.app.Activity;
 import android.content.Context;
 import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -107,7 +108,7 @@ public class EBooksRowAdapter extends ArrayAdapter<EBook> {
      *
      * @param holder- eBook holder to keep title, description, date and image url
      */
-    private void setDataInEBookFragment(EBooksViewHolder holder) {
+    public void setDataInEBookFragment(EBooksViewHolder holder) {
         setTitleInEBookViewHolder(holder);
         setDescriptionInEBookViewHolder(holder);
         setDateInEBookViewHolder(holder);
@@ -160,11 +161,20 @@ public class EBooksRowAdapter extends ArrayAdapter<EBook> {
                                 pBar.setVisibility(View.VISIBLE);
                             }
                         });
-
+                Log.d("setImageInEBooks", "download image");
             } else {
                 holder.eBookImage.setImageResource(R.drawable.ic_home);
+                Log.d("setImageInEBooks", "set default image");
             }
         }
+    }
+
+    public EBook getObjBean() {
+        return objBean;
+    }
+
+    public void setObjBean(EBook objBean) {
+        this.objBean = objBean;
     }
 
 

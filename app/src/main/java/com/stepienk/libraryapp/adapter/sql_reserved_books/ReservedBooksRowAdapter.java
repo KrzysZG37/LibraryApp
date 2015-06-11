@@ -2,6 +2,7 @@ package com.stepienk.libraryapp.adapter.sql_reserved_books;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,7 @@ import info.androidhive.LibraryApp.R;
  * Created by Krzysiek on 2015-04-14.
  */
 public class ReservedBooksRowAdapter extends BaseAdapter {
+
     private JSONArray dataArray;
     private Activity activity;
     private static LayoutInflater inflater = null;
@@ -89,7 +91,7 @@ public class ReservedBooksRowAdapter extends BaseAdapter {
      * @param holder   - book holder to keep title, description, date and image url
      * @param position - concrete position of book in list
      */
-    private void setDataInBookFragment(JSONObject json, ReservedBooksViewHolder holder, int position) {
+    public void setDataInBookFragment(JSONObject json, ReservedBooksViewHolder holder, int position) {
         String imageUrl = null;
         try {
             json = dataArray.getJSONObject(position);
@@ -97,7 +99,9 @@ public class ReservedBooksRowAdapter extends BaseAdapter {
             holder.bookDescription.setText(json.getString("description"));
             holder.bookDate.setText(json.getString("date"));
             imageUrl = json.getString("image");
+            Log.d("setDataInBookFragment", "downloading data from json");
             LoadImages.loadImageFromURL(imageUrl, options, imageLoader, pBar, activity, img);
+            Log.d("setDataInBookFragment", "uploading photo from url");
         } catch (JSONException e) {
             e.printStackTrace();
         }

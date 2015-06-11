@@ -12,7 +12,6 @@ public class ReserveBooksThread extends Thread {
     private HttpClient client = new DefaultHttpClient();
     private String urlToReserveBook;
 
-
     /*
     Runs HttpClient to reserve specified book
      */

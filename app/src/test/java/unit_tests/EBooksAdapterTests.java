@@ -1,5 +1,9 @@
 package unit_tests;
 
+import android.app.Activity;
+
+import com.stepienk.libraryapp.adapter.dropbox_ebooks.EBooksRowAdapter;
+import com.stepienk.libraryapp.adapter.dropbox_ebooks.EBooksViewHolder;
 import com.stepienk.libraryapp.model.dropbox_ebooks.EBookNamesParser;
 import com.stepienk.libraryapp.model.dropbox_ebooks.EBook;
 
@@ -16,20 +20,32 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.List;
 
+import info.androidhive.LibraryApp.R;
+
+import static org.mockito.Mockito.mock;
+
 /**
  * Created by stepienk on 2015-04-23.
  */
 public class EBooksAdapterTests {
     private List<EBook> listArray;
     private EBookNamesParser eBookNamesParser;
+    private EBooksRowAdapter eBooksRowAdapter;
+    private Activity activity;
+    private EBook objBean;
     private static final String rssFeed = "https://www.dropbox.com/s/93ehhvxgyhwxs0g/imagelistview.xml?dl=1";
     private int id;
     private String title;
     private String pubDate;
+    EBooksViewHolder holder;
 
     @Before
     public void setUp() {
+        activity = mock(Activity.class);
+        objBean = new EBook();
+        holder = new EBooksViewHolder();
         eBookNamesParser = new EBookNamesParser();
+        eBooksRowAdapter = new EBooksRowAdapter(activity, R.layout.ebooks_row, listArray);
     }
 
     @Test
@@ -78,6 +94,17 @@ public class EBooksAdapterTests {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void shouldSetDataInEBookFragment() {
+        objBean.setTitle("test title");
+        objBean.setDesc("test description");
+        objBean.setId("1");
+        objBean.setLink("http://test.link");
+        objBean.setPubDate("01-02-2015");
+        eBooksRowAdapter.setObjBean(objBean);
+        eBooksRowAdapter.setDataInEBookFragment(holder);
     }
 
 
